@@ -1,6 +1,7 @@
 require 'discordrb'
+require_relative 'settings'
 
-bot = Discordrb::Bot.new token: 'MTk4NjY1NjkwNjMzMjA3ODA4.CljdVw.vc3Uia3bCxdP1UtQiCo9x4PuSvQ', client_id: 198665319659601922
+bot = Discordrb::Bot.new token: TOKEN, client_id: CLIENTID 
 
 
 bot.message(with_text: 'Ping!') do |event|
